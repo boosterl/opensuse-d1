@@ -111,13 +111,13 @@ elif [ "${BOOT_METHOD}" = 'efi' ]; then
     echo '###################################################'
 
     ${SUDO} mkdir -p "${MNT}/boot/loader/entries"
-    cat <<EOF >arch.conf
-title	Arch Linux
+    cat <<EOF >opensuse.conf
+title	openSUSE
 linux	/Image
 
 options	earlycon=sbi console=ttyS0,115200n8 root=/dev/mmcblk0p2 rootwait cma=96M ro
 EOF
-    ${SUDO} mv arch.conf "${MNT}/boot/loader/entries/arch.conf"
+    ${SUDO} mv opensuse.conf "${MNT}/boot/loader/entries/opensuse.conf"
 fi
 
 # fstab
