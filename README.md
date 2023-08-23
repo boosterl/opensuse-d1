@@ -1,3 +1,7 @@
+# ⚠ DEPRECATION NOTICE ⚠
+
+This image is not in development anymore. Please refer to the [openSUSE upstream image](https://en.opensuse.org/HCL:MangoPi_MQ-Pro) instead.
+
 # Build openSUSE images for the Allwinner D1
 
 ![neofetch](img/neofetch.png)
